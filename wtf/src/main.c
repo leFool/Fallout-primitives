@@ -120,7 +120,7 @@ void fallout(int pagenum, char *victim) {
             }
         }
         if (args & debug)
-            printf("PAGE#%d at [%03d] string index: [%02d] ",pagenum, (i + 1) * OFFSET, i);
+            printf("PAGE#%d at [%03d] string index: [%02d] ", pagenum, (i + 1) * OFFSET, i);
         unsigned char best = 0;
         if (success) {
             for (int j = 1; success && j < 256; j++) {
