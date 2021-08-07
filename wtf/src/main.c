@@ -92,7 +92,7 @@ char *gnrname(int namei) {
 }
 
 void gnrsecret() {
-    slen = rand() % (SECRET_MAX_LEN - SECRET_MIN_LEN) + SECRET_MIN_LEN;
+    //slen = rand() % (SECRET_MAX_LEN - SECRET_MIN_LEN) + SECRET_MIN_LEN;
     for (int i = 0; i < slen; i++) {
         secret[i] = rand() % 127 + 1; // 1 <= char <= 127
     }
