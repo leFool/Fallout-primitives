@@ -35,7 +35,7 @@ void gnrsecret();
 void fallout(int, char *);
 enum flags {debug = 1, fixed = 2};
 int args = 0;
-int slen = SECRET_MAX_LEN;
+int slen = SECRET_MAX_LEN - 1;
 
 char secret[SECRET_MAX_LEN] = "This page has been compromised! you are not safe!";
 char decoded[SECRET_MAX_LEN];
