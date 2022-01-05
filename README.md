@@ -2,6 +2,10 @@
 
 An implementation of the 3 Fallout attack primitives based on the article https://mdsattacks.com/files/fallout.pdf
 
+Fallout attack is used on Meltdown-resistant Intel CPUs to break the kernel page protection.
+This done a certain shortcut in Intel’s Store Buffer logic in-order to load protected kernel pages
+into the cache, then acquiring the data using Flush+Reload attack.
+
 3.1: WTF - Write Transient Forwarding
 
 Generates 1000 pages and fills them with random bytes (20 - 50 bytes each).
